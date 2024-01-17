@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Price from "./Price";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const Book = ({ book }) => {
   const [img, setImg] = useState();
 
-  const mountedRef = useRef(true);
+  // const mountedRef = useRef(true);
 
   useEffect(() => {
     const image = new Image();
